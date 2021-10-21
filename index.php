@@ -45,6 +45,7 @@ if (isset($_SESSION['success'])) {
                 <div class="card">
                     <div class="card-header">Sent SMS</div>
                     <div class="card-body">
+                        <?php include "./views/smses.view.php" ?>
                     </div>
                 </div>
             </div>
