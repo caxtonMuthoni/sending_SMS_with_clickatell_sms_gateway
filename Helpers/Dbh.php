@@ -27,7 +27,7 @@ class Dbh
             }
             return $dbh;
         } catch (PDOException $e) {
-            die("Error:". $e);
+            die("Error:". $e->getMessage());
         }
     }
 }
