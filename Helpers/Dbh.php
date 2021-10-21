@@ -24,10 +24,13 @@ class Dbh
             } else {
                 $dsn = "pgsql:host=$this->pro_host;dbname=$this->pro_dbName;port=5432;user=$this->pro_user;password=$this->pro_password";
                 $dbh = new PDO($dsn, $this->pro_user, $this->pro_password);
+                $dbh->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+                $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+                $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             }
             return $dbh;
         } catch (PDOException $e) {
-            die("Error:". $e->getMessage());
+            die("Error:" . $e->getMessage());
         }
     }
 }
