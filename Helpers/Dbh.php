@@ -22,7 +22,7 @@ class Dbh
                 $dsn = "mysql:host=$this->host;dbname=$this->dbName";
                 $dbh = new PDO($dsn, $this->user, $this->password);
             } else {
-                $dsn = "pgsql:host=$this->pro_host;dbname=$this->pro_dbName;port=5432;";
+                $dsn = "pgsql:host=$this->pro_host;dbname=$this->pro_dbName;port=5432;user=$this->pro_user;password=$this->pro_password";
                 $dbh = new PDO($dsn, $this->pro_user, $this->pro_password);
             }
             return $dbh;
