@@ -1,5 +1,9 @@
 <?php
 
+namespace services;
+
+use Helpers\Client;
+
 class SmsService
 {
     // private $apiKey = "om61-2RkQeyiTjy7kPLbtg==";

@@ -1,4 +1,7 @@
 <?php
+
+use controllers\SmsController;
+
 $smsController = new SmsController();
 $smses = $smsController->allSmses();
 ?>

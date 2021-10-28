@@ -1,5 +1,9 @@
 <?php
 
+namespace Helpers;
+
+use Exception;
+
 class Client
 {
     private $method;

@@ -1,5 +1,10 @@
 <?php
 
+namespace controllers;
+
+use Models\Sms;
+use services\SmsService;
+
 class SmsController
 {
 
@@ -11,7 +16,7 @@ class SmsController
 
     public function sendSms($phone, $sms)
     {
-        $smsService = new SmsService();
+        $smsService = new SmsService;
         $response = $smsService->sendSms($phone, $sms);
 
         if ($response) {

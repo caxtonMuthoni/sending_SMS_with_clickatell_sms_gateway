@@ -1,11 +1,7 @@
 <?php
 session_start();
 
-include './Helpers/Dbh.php';
-include './Helpers/Client.php';
-include './services/SmsService.php';
-include './Models/Sms.php';
-include './controllers/SmsController.php';
+require_once "./autoload.php";
 
 
 

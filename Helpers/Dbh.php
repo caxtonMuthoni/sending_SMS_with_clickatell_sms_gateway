@@ -1,5 +1,10 @@
 <?php
 
+namespace Helpers;
+
+use PDO;
+use PDOException;
+
 class Dbh
 {
     // LocaL

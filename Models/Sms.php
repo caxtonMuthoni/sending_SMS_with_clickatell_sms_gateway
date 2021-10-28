@@ -1,5 +1,9 @@
 <?php
 
+namespace Models;
+
+use Helpers\Dbh;
+
 class Sms extends Dbh
 {
     public function getAllSms()
